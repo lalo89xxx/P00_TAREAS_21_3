@@ -2,17 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConstructorItem : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
+[System.Serializable]
+public class ConstructorItem
+{
+   public int EnemigoID;
+
+   public string Nombre;
+
+   private Transform PosicionActual;
+
+   private int VidaMas;
+
+   public ConstructorItem(int id, string N)
+  {
+        this.EnemigoID = id;
+        this.Nombre = N;
         
-    }
+        
+      
+
+      
+      
+  }
+
 }

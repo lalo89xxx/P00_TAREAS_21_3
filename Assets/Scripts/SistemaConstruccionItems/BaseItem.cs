@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class BaseItem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public ConstructorItem[] nuevoItem
+    ;
 
-    // Update is called once per frame
-    void Update()
+
+    // Start is called before the first frame update
+    void Awake()
     {
+        nuevoItem = new ConstructorItem[2];
+
+        nuevoItem[0] = new ConstructorItem(1,"Vida +");
+        nuevoItem[1] = new ConstructorItem(2,"Vida ++");
+        
+    
+        
+
+
+    
         
     }
 }
