@@ -12,8 +12,8 @@ public class BaseJugadores : MonoBehaviour
     {
         nuevoJugador = new ConstructorJugador[2];
 
-        nuevoJugador[0] = new ConstructorJugador(1,"Fredo",40,15);
-        nuevoJugador[1] = new ConstructorJugador(2,"Angelic",30,25); 
+        nuevoJugador[0] = new ConstructorJugador(1,"Fredo",300,50);
+        nuevoJugador[1] = new ConstructorJugador(2,"Angelic",280,25); 
         
         
 
