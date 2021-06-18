@@ -28,7 +28,7 @@ public class Item : MonoBehaviour
     {
         for (int i = 0; i < BDItem.nuevoItem.Length; i++)
         {
-            if (BDItem.nuevoItem[i].EnemigoID == id)
+            if (BDItem.nuevoItem[i].ItemID == id)
             {
                 this.Nombre = BDItem.nuevoItem[i].Nombre;
                 

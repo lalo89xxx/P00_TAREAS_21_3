@@ -6,7 +6,7 @@ using UnityEngine;
 [System.Serializable]
 public class ConstructorItem
 {
-   public int EnemigoID;
+   public int ItemID;
 
    public string Nombre;
 
@@ -16,7 +16,7 @@ public class ConstructorItem
 
    public ConstructorItem(int id, string N)
   {
-        this.EnemigoID = id;
+        this.ItemID = id;
         this.Nombre = N;
         
         
