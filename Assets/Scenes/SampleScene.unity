@@ -1710,7 +1710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc0fdd2ec766c704f85ac8623825bed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "Da\xF1o": 60
+  "Da\xF1o": 100
 --- !u!54 &1642815271
 Rigidbody:
   m_ObjectHideFlags: 0
