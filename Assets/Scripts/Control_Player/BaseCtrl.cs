@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mando_1 : MonoBehaviour
+public class BaseCtrl : MonoBehaviour
 {
     [SerializeField]
     private float VelocidadMov;
@@ -16,6 +16,10 @@ public class Mando_1 : MonoBehaviour
     [SerializeField]
     private float VelocidadRotVertical;
 
+    protected Vector3  direction = Vector3.zero;
+
+    protected bool directionForward;
+
     Animator AnimacionPL;
 
     
@@ -25,27 +29,7 @@ public class Mando_1 : MonoBehaviour
     }
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
         
-    }
-
-    // Update is called once per frame
-    void Update()
-
-   
-    {
-        float h_rotacion = Input.GetAxis("Mouse X");
-        float v_rotacion = Input.GetAxis("Mouse Y");
-        
-        ControlJugador();
-        LookAtAim(h_rotacion,v_rotacion);
-        Salto();
-        Disparo();
-        SaltoIdle();
-        
-    }
 
     
     private void LookAtAim()
@@ -82,24 +66,23 @@ public class Mando_1 : MonoBehaviour
     }
 
     
-    private void ControlJugador()
+    protected virtual void ControlJugador()
     {
-        float vertical = Input.GetAxis("Vertical");// Resgistra el hardware 
+        
+        
 
-        Vector3 direction = new Vector3 (0, 0, vertical);// Convierte en electricidad  
+        this.transform.Translate(direction.normalized * VelocidadMov * Time.deltaTime);
 
-        direction *= Time.deltaTime * VelocidadMov;
+        AnimacionPL.SetFloat("Speed", direction.z);
 
-        bool directionForward = direction.z != 0 ? true : false ;
+        AnimacionPL.SetFloat("SpeedLateral", direction.x);
 
-        this.transform.Translate(direction);
-
-        AnimacionPL.SetBool("Walk",directionForward);
+        
     }
 
 
  
-    private void Salto()
+    protected void Salto()
     {
 
         if(Input.GetKeyDown(KeyCode.Space))
@@ -108,7 +91,7 @@ public class Mando_1 : MonoBehaviour
         }
 
     }
-    private void Disparo()
+    protected void Disparo()
     {
 
         if(Input.GetMouseButtonDown(0))
@@ -118,13 +101,31 @@ public class Mando_1 : MonoBehaviour
 
     }
 
-    private void SaltoIdle()
+    protected void SaltoIdle()
+    {
+
+        if(Input.GetKeyDown(KeyCode.J))
+        {
+            AnimacionPL.SetTrigger("JUMP2");
+        }
+
+    }
+
+     protected void Correr()
     {
 
         if(Input.GetKeyDown(KeyCode.R))
         {
-            AnimacionPL.SetTrigger("JUMP2");
+            AnimacionPL.SetTrigger("RUN");
         }
+
+    }
+
+    protected bool DirectionForward(float d)
+    {
+        bool directionForward = d != 0 ? true : false ;
+        return directionForward;
+
 
     }
 }
