@@ -80,6 +80,26 @@ public class BaseCtrl : MonoBehaviour
         
     }
 
+    protected void StandingAttack(bool a)
+    {
+        AnimacionPL.SetBool("StandAtaque", a);
+
+    }
+
+    
+
+    protected void Attack()
+    {
+        AnimacionPL.SetTrigger("Ataque");
+
+    }
+
+    protected void Ataques(int i)
+    {
+        AnimacionPL.SetInteger("Ataques", i);
+
+    }
+
 
  
     protected void Salto()
