@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/*Nombre:Eduardo Torres Flores
+Asignatura: Programacion Orientada a Objetos*/
 
+//Este script es donde es contrlador de jugador principal
 public class Ctrl_Jugador : BaseCtrl
 {
 
@@ -19,6 +22,9 @@ public class Ctrl_Jugador : BaseCtrl
 
 
     // Start is called before the first frame update
+
+    /*Estan son la variables game object que se crearon para asignarle un objeto que 
+    que simula un arma, esto sirve para que esten desactivadas al iniciar el juego*/
     void Start()
     {
         
@@ -41,6 +47,8 @@ public class Ctrl_Jugador : BaseCtrl
         SaltoIdle();
 
         Correr();*/
+
+        //Estas son las entradas de teclado para iniciar la animaciones con sus respectivas armas 
 
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -83,6 +91,9 @@ public class Ctrl_Jugador : BaseCtrl
         
         StandingAttack(StandAtaque);
         Ataques(indice);
+
+        /*Estos indices se crearon para diferenciar las armas que llevara cada animacion
+        de acuerdo a las entradas de teclado*/
 
         switch(indice)
          {
@@ -150,6 +161,9 @@ public class Ctrl_Jugador : BaseCtrl
         
 
     }
+
+    /*Estas variables se usan para asignar el movimeinto del jugador,
+    se heredan del script BaseCtrl*/
 
     protected override void ControlJugador()
     {

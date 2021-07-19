@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*Nombre:Eduardo Torres Flores
+Asignatura: Programacion Orientada a Objetos*/
 public class BaseCtrl : MonoBehaviour
 {
     [SerializeField]
@@ -65,6 +66,9 @@ public class BaseCtrl : MonoBehaviour
        
     }
 
+    /*Se modifico el controlador para que se pudiera caminar hacia atras y 
+    hacia los lados*/
+
     
     protected virtual void ControlJugador()
     {
@@ -79,6 +83,8 @@ public class BaseCtrl : MonoBehaviour
 
         
     }
+
+    //Se crearon las variables para crear los ciclos de animacion de ataque
 
     protected void StandingAttack(bool a)
     {
@@ -100,8 +106,9 @@ public class BaseCtrl : MonoBehaviour
 
     }
 
-
- 
+    /*Estas variables por el momento no se estan usando se necesitan
+    declarar en un layer o capa*/
+      
     protected void Salto()
     {
 
