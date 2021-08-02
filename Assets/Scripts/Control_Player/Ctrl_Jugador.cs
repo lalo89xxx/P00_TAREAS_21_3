@@ -39,6 +39,7 @@ public class Ctrl_Jugador : BaseCtrl
     void Update()
     {
         ControlJugador();
+        LookAtAim();
 
         /*Salto();
 

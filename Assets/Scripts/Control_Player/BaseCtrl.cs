@@ -33,7 +33,7 @@ public class BaseCtrl : MonoBehaviour
         
 
     
-    private void LookAtAim()
+    protected void LookAtAim()
     {
         float h_rotacion = Input.GetAxis("Mouse X");
 
@@ -48,7 +48,7 @@ public class BaseCtrl : MonoBehaviour
     }
 
     
-    private void LookAtAim(float h, float v)
+   protected void LookAtAim(float h, float v)
     {
         float h_rotacion = h;
         float v_rotacion = v;
