@@ -2,8 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum EstadosAI
+{
+    Idle,
+    Persecucion,
+    AtaqueDistanacia
+}
+
 public class MOVIA : MonoBehaviour
 {
+    public EstadosAI estadoActual;
     public Transform Target;
 
     public float Velocidad;
@@ -27,28 +35,31 @@ public class MOVIA : MonoBehaviour
         //Formula:
         //Direccion = punto de llagada - punto de origen;
         Vector3 direccion = Target.position - transform.position;
-        Debug.Log(direccion.magnitude);
+      
 
         transform.LookAt(Target);
+        
+        switch(estadoActual)
+      {
+          case EstadosAI.Idle:
+          PlayerAnimation("Idle");
+          
+          break;
 
-        if(direccion.magnitude > DistanciaExacta)
-        {
-             Move(direccion);
-             ActivarAnimacionBool("RUN",true);
-        }
+          case EstadosAI.Persecucion:
+          PlayerAnimation("Fast Run");
+          
+          break;
 
-       else if(direccion.magnitude <= DistanciaExacta)
-       {
-           PlayerAnimation("Quad Punch");
+          case EstadosAI.AtaqueDistanacia:
+          PlayerAnimation("Shooting");
+          
+          break;
 
-       }
-       
-       else
-       {
-            PlayerAnimation("Idle"); 
-            ActivarAnimacionBool("RUN",false);
 
-       }
+      }
+
+        
        
 
 

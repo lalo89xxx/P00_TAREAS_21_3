@@ -552,8 +552,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a220012b2978ee548a2722a4e0d70230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VelocidadMov: 5
-  VelocidadRot: 80
+  VelocidadMov: 12
+  VelocidadRot: 60
   VelocidadRotHorizontal: 0
   VelocidadRotVertical: 0
   StandAtaque: 0
@@ -615,6 +615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ybot
       objectReference: {fileID: 0}
+    - target: {fileID: 5822821947120931875, guid: 9f60a6b6f24bce94f953bfcb549b0dd3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c4f7b7604319e8544bd527bc1148c045, type: 2}
     m_RemovedComponents:
     - {fileID: 5866666021909216657, guid: 9f60a6b6f24bce94f953bfcb549b0dd3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9f60a6b6f24bce94f953bfcb549b0dd3, type: 3}

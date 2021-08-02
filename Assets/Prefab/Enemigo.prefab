@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &651786891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 651786892}
+  m_Layer: 0
+  m_Name: PuntaArma
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &651786892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651786891}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.044, y: 1.342, z: 0.678}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6825508612464082172}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3482416898126939692
 GameObject:
   m_ObjectHideFlags: 0
@@ -15,9 +45,10 @@ GameObject:
   - component: {fileID: 699761272}
   - component: {fileID: 699761269}
   - component: {fileID: 699761268}
+  - component: {fileID: 699761275}
   m_Layer: 0
   m_Name: Enemigo
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,6 +65,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 3118004925309131956}
+  - {fileID: 651786892}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -99,7 +131,7 @@ CapsuleCollider:
   m_Radius: 0.4
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 1.04, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!54 &699761272
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -147,9 +179,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178141a7678186e4aba53f13666861a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  estadoActual: 0
   Target: {fileID: 0}
-  Velocidad: 2
+  Velocidad: 4
   AnimEnemigo: {fileID: 0}
+  DistanciaExacta: 10
+--- !u!114 &699761275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482416898126939692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a94438289cd1fe4b98fa5411c047aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "Ca\xF1onArma": {fileID: 651786892}
+  Bala: {fileID: 112843479729928720, guid: e80d584422099844f8e3150f1acefb80, type: 3}
 --- !u!1001 &3229038639514483551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -208,7 +256,7 @@ PrefabInstance:
     - target: {fileID: 5822821947120931875, guid: 9f60a6b6f24bce94f953bfcb549b0dd3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 45d427cbe7950fa448c13d85f2c2749e, type: 2}
+      objectReference: {fileID: 2100000, guid: 5f90b40095c283f4ebec375cccb3acc2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f60a6b6f24bce94f953bfcb549b0dd3, type: 3}
 --- !u!4 &3118004925309131956 stripped
