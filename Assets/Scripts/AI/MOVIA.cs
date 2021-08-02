@@ -48,12 +48,15 @@ public class MOVIA : MonoBehaviour
 
           case EstadosAI.Persecucion:
           PlayerAnimation("Fast Run");
-          
+          Move(direccion);
           break;
 
           case EstadosAI.AtaqueDistanacia:
           PlayerAnimation("Shooting");
           
+          break;
+
+          default:
           break;
 
 
@@ -78,7 +81,7 @@ public class MOVIA : MonoBehaviour
      private void ActivarAnimacionBool(string NombreAnimacion, bool Valor)
     {
 
-        AnimEnemigo.SetBool(NombreAnimacion, Valor);
+       AnimEnemigo.SetBool(NombreAnimacion, Valor);
     }
 
     private void PlayerAnimation(string NombreClip)

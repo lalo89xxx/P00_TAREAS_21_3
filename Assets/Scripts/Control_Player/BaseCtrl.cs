@@ -9,7 +9,7 @@ public class BaseCtrl : MonoBehaviour
     private float VelocidadMov;
     
     [SerializeField]
-    private float VelocidadRot;
+    protected float VelocidadRot;
 
     [SerializeField]
     private float VelocidadRotHorizontal;
