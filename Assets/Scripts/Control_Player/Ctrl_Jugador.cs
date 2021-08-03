@@ -53,7 +53,7 @@ public class Ctrl_Jugador : BaseCtrl
 
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
-            indice=1;
+          indice=1;
 
         }
 

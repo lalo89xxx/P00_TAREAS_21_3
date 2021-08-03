@@ -46,9 +46,9 @@ GameObject:
   - component: {fileID: 699761269}
   - component: {fileID: 699761268}
   - component: {fileID: 699761275}
-  - component: {fileID: 293714991}
+  - component: {fileID: 798970708}
   m_Layer: 0
-  m_Name: Enemigo
+  m_Name: EnemigoDisparo
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -200,7 +200,7 @@ MonoBehaviour:
   "Ca\xF1onArma": {fileID: 651786892}
   Bala: {fileID: 112843479729928720, guid: e80d584422099844f8e3150f1acefb80, type: 3}
   FuerzaBala: 3000
---- !u!114 &293714991
+--- !u!114 &798970708
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -209,10 +209,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3482416898126939692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25d525f443ee529479deb014c529cc35, type: 3}
+  m_Script: {fileID: 11500000, guid: 344464a16713f4746b34c5e8f5b34c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rango_Persecucion: 8.99
+  Rango_Disparo: 8.99
   layerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -274,7 +274,7 @@ PrefabInstance:
     - target: {fileID: 5822821947120931875, guid: 9f60a6b6f24bce94f953bfcb549b0dd3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5f90b40095c283f4ebec375cccb3acc2, type: 2}
+      objectReference: {fileID: 2100000, guid: df7f43f36caee7d479ae73aac3ee04fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f60a6b6f24bce94f953bfcb549b0dd3, type: 3}
 --- !u!4 &3118004925309131956 stripped

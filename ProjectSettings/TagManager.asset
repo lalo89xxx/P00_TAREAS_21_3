@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Radar
+  - Bala
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -13,9 +15,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Enemigo
+  - Items
   - 
   - 
   - 

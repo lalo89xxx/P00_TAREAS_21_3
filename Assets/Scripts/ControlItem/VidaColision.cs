@@ -14,8 +14,15 @@ public class VidaColision : MonoBehaviour
         {
 
             other.gameObject.GetComponent<VIdaPlus_Jugador>().Life(VidaMas);
+            Destroy(this.gameObject);
+            
+           
+
+        
 
 
         }
     }
+
+    
 }

@@ -27,6 +27,7 @@ public class MOVIA : MonoBehaviour
     void Start()
     {
         AnimEnemigo = GetComponent <Animator>();
+        estadoActual = EstadosAI.Idle;
     }
 
     // Update is called once per frame
