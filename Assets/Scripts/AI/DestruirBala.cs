@@ -8,7 +8,7 @@ public class DestruirBala : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(this.gameObject, 1f);
+        Destroy(this.gameObject, 2f);
     }
 
     private void OnBecameInvisible()
