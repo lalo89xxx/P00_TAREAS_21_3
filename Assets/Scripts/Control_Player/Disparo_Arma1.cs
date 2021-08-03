@@ -15,6 +15,9 @@ public class Disparo_Arma1 : MonoBehaviour
         Rigidbody rbPos = Instantiate(Bala1) as Rigidbody;
         rbPos.transform.position = CañonArma.position;
         rbPos.AddForce(CañonArma.forward*FuerzaBala);
+
+        
+       
         
 
     }

@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 699761268}
   - component: {fileID: 699761275}
   - component: {fileID: 293714991}
+  - component: {fileID: 9090296560503013001}
   m_Layer: 0
   m_Name: Enemigo
   m_TagString: Enemy
@@ -216,6 +217,19 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &9090296560503013001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482416898126939692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc0fdd2ec766c704f85ac8623825bed5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "Da\xF1o": 25
 --- !u!1001 &3229038639514483551
 PrefabInstance:
   m_ObjectHideFlags: 0
