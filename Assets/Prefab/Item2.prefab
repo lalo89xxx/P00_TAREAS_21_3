@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8745489722149282128}
   - component: {fileID: 8745489722149282135}
   - component: {fileID: 8745489722149282134}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NombreTextItem2 (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,9 +152,9 @@ GameObject:
   - component: {fileID: 8745489722368603745}
   - component: {fileID: 8745489722368603744}
   - component: {fileID: 8745489722368603759}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Item2
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,7 +168,7 @@ Transform:
   m_GameObject: {fileID: 8745489722368603751}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 11.63, y: 3.02, z: 21.46}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 8745489723417913037}
   m_Father: {fileID: 0}
@@ -250,7 +250,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!114 &8745489722368603745
 MonoBehaviour:
@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 8745489723417913037}
   - component: {fileID: 8745489723417913039}
   - component: {fileID: 8745489723417913038}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CanvasItem1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

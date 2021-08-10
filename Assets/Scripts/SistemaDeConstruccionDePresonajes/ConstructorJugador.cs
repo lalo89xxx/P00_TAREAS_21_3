@@ -14,6 +14,7 @@ public class ConstructorJugador
 
   public float Velocidad;
 
+
   private Transform PosicionActual;
 
   private int daño;
@@ -25,6 +26,7 @@ public class ConstructorJugador
         this.Nombre = N;
         this.Vida = Vida;
         this.Velocidad = Vel;
+        
       
 
       

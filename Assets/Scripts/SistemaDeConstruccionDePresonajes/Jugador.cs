@@ -14,6 +14,7 @@ public class Jugador : MonoBehaviour
 
 
 
+
   BaseJugadores BDjugadores;
 
   private void Start() 
@@ -35,7 +36,8 @@ public class Jugador : MonoBehaviour
             {
                 this.Nombre = BDjugadores.nuevoJugador[i].Nombre;
                 this.Vida = BDjugadores.nuevoJugador[i].Vida;
-                this.Velocidad = BDjugadores.nuevoJugador[i].Velocidad; 
+                this.Velocidad = BDjugadores.nuevoJugador[i].Velocidad;
+                
             }
 
             

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class BaseItem : MonoBehaviour
 {
-    public ConstructorItem[] nuevoItem
-    ;
+    public ConstructorItem[] nuevoItem;
 
 
     // Start is called before the first frame update
