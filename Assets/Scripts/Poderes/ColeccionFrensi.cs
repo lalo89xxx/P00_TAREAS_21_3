@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ColeccionFrensi : MonoBehaviour
 {
-    FRENESI monedasSuma; 
+    FRENESI monedasSuma;
+
+    public int Fr;
     
     // Start is called before the first frame update
     void Start()
@@ -18,7 +20,7 @@ public class ColeccionFrensi : MonoBehaviour
     {
         if (otraMonedas.gameObject.tag == "Player")
         {
-            monedasSuma.Fr += 100;
+            monedasSuma.Fr += Fr;;
 
             Destroy(this.gameObject);
         }

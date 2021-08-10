@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ColeccionPUP : MonoBehaviour
 {
-    POWERUP monedasSuma; 
+    POWERUP monedasSuma;
+
+    public int Up;
     
     // Start is called before the first frame update
     void Start()
@@ -18,7 +20,7 @@ public class ColeccionPUP : MonoBehaviour
     {
         if (otraMonedas.gameObject.tag == "Player")
         {
-            monedasSuma.Up += 200;
+            monedasSuma.Up += Up;
 
             Destroy(this.gameObject);
         }
