@@ -6,10 +6,13 @@ using UnityEngine;
 Profesor: Josue Israel Rivas Diaz.
 Asignatura: Programacion Orientada a Objetos*/
 
-public class POWERUP : MonoBehaviour
+//Este script solo se declaro, no se uso la verdad es que segui pasos de la materia
+//estructura de datos y ahi se declara este script, pero la verdad no entendi su uso
+//lo borre y no paso nada, pero lo dejo por si de alguna manera afecta a la constrccion
+//de nuestro juego. 
+
+public class GameManager : MonoBehaviour
 {
-    //Se crea una variable publica de tipo flotante para poder mandarla a llamar y asignarala en otro script.
-    public float Up;
     // Start is called before the first frame update
     void Start()
     {

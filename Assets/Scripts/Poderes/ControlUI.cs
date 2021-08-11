@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/*Nombre: Eduardo Torres Flores.
+Profesor: Josue Israel Rivas Diaz.
+Asignatura: Programacion Orientada a Objetos*/
+
 public class ControlUI : MonoBehaviour
 {
     public TMP_Text[] interfaceTXT;
@@ -12,6 +16,11 @@ public class ControlUI : MonoBehaviour
     public FRENESI TMP_TextFrenesi;
     
     // Start is called before the first frame update
+
+    //Este script se le asignara a un objeto llamado game manager, servira para asignar los datos y el resultado
+    //numerico que va generar la colison entre el jugador y el objeto, y poder imprirmirlos en pantalla, para que
+    //esto funcione se tienen que mandar a llamar a los scripts FRENESI Y POWERUP, y asignarles variables de tipo
+    //texto.
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -25,6 +34,9 @@ public class ControlUI : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    //Aqui se duplican las variables de tipo texto ya que estas son las que sufriran el cambio y mostraran
+    //el dato que resulta de la colison y lo imprimira en pantalla. 
     void Update()
     {
       

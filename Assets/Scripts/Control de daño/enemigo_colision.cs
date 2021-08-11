@@ -6,31 +6,23 @@ using UnityEngine;
 Profesor: Josue Israel Rivas Diaz.
 Asignatura: Programacion Orientada a Objetos*/
 
-
-public class VidaColision : MonoBehaviour
+public class enemigo_colision : MonoBehaviour
 {
+    public float Daño;
     
-    public float VidaMas;
-    
-    //En esta parte ya que se genera la varibale de tipo publica y el script que va generar la suma a la vida 
+    //En esta parte ya que se genera la varibale de tipo publica y el script que va generar la resta a la vida 
     //del jugador se crea la colision y a crearse la colision se destruye el obajeto con el que se creo la 
     //colison.
+    
      private void OnCollisionEnter(Collision other) 
      
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Enemy")
         {
 
-            other.gameObject.GetComponent<VIdaPlus_Jugador>().Life(VidaMas);
-            Destroy(this.gameObject);
-            
-           
-
-        
+            other.gameObject.GetComponent<daño_enemigo>().Damage(Daño);
 
 
         }
     }
-
-    
 }

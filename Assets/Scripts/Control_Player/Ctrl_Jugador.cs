@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/*Nombre:Eduardo Torres Flores
+
+/*Nombre: Eduardo Torres Flores.
+Profesor: Josue Israel Rivas Diaz.
 Asignatura: Programacion Orientada a Objetos*/
 
-//Este script es donde es contrlador de jugador principal
+//Este script se creo para crear un contrlador de jugador principal.
+
 public class Ctrl_Jugador : BaseCtrl
 {
 
@@ -37,6 +40,10 @@ public class Ctrl_Jugador : BaseCtrl
 
     // Update is called once per frame
     void Update()
+    
+    //Se manadan a llamar la variables del script de BaseCtrl ya que son publicas y sean funcionales cuando 
+    //este script se le asigne al jugador.
+    
     {
         ControlJugador();
         LookAtAim();

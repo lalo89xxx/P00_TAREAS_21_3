@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/*Nombre:Eduardo Torres Flores
+
+/*Nombre: Eduardo Torres Flores.
+Profesor: Josue Israel Rivas Diaz.
 Asignatura: Programacion Orientada a Objetos*/
+
 public class BaseCtrl : MonoBehaviour
 {
     [SerializeField]
@@ -23,7 +26,7 @@ public class BaseCtrl : MonoBehaviour
 
     Animator AnimacionPL;
 
-    
+    //Aqui se manada a llamar al animator para que este activo y se pueda usar.
     void Awake() 
     {
         AnimacionPL = GetComponent<Animator>();
@@ -32,7 +35,7 @@ public class BaseCtrl : MonoBehaviour
 
         
 
-    
+    //En esta parte se crea un metodo para que el jugador pueda rotar y se pueda mover atras y adelante.
     protected void LookAtAim()
     {
         float h_rotacion = Input.GetAxis("Mouse X");
@@ -47,7 +50,7 @@ public class BaseCtrl : MonoBehaviour
        
     }
 
-    
+    //En esta parte se crea un metodo para que el jugador pueda rotar de manera vertical y horizontal.
    protected void LookAtAim(float h, float v)
     {
         float h_rotacion = h;
@@ -84,7 +87,7 @@ public class BaseCtrl : MonoBehaviour
         
     }
 
-    //Se crearon las variables para crear los ciclos de animacion de ataque
+    //Se crearon las variables para crear los ciclos de animacion de ataque.
 
     protected void StandingAttack(bool a)
     {
@@ -107,7 +110,7 @@ public class BaseCtrl : MonoBehaviour
     }
 
     /*Estas variables por el momento no se estan usando se necesitan
-    declarar en un layer o capa*/
+    declarar en el animator*/
       
     protected void Salto()
     {

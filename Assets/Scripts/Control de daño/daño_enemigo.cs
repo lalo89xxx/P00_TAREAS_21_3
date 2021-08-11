@@ -6,28 +6,28 @@ using UnityEngine;
 Profesor: Josue Israel Rivas Diaz.
 Asignatura: Programacion Orientada a Objetos*/
 
-public class daño_jugador : MonoBehaviour
+public class daño_enemigo : MonoBehaviour
 {
-    Jugador playerData;
+    Enemigo enemigoData;
 
     // Start is called before the first frame update
 
-    //Este script servira para mandar a llamar al jugador y poder declarar un colision y cree un cambio en
-    //este caso negativo que va a restar la vida del jugador.
+    //Este script servira para mandar a llamar al enemigo y poder declarar un colision y cree un cambio en
+    //este caso negativo que va a restar la vida del enemigo.
 
     void Start()
     {
-        playerData = GetComponentInParent<Jugador>();
+        enemigoData = GetComponentInParent<Enemigo>();
     }
 
-    //Esta es la accion que genera un cambio en la variable vida del jugador, tambien se va declarar
+    //Esta es la accion que genera un cambio en la variable vida del enemigo, tambien se va declarar
     //una variable publica para poder modificarla desde el inspector y no tener que estar entrando al codigo 
     //para hacerle un cambio.
-    
+
     public void Damage()
     {
         
-        playerData.Vida -= 5;
+        enemigoData.Vida -= 5;
 
  
     }
@@ -35,11 +35,8 @@ public class daño_jugador : MonoBehaviour
     public void Damage(float Daño)
     {
         
-        playerData.Vida -= Daño;
+        enemigoData.Vida -= Daño;
 
  
     }
-
-
-
 }

@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*Nombre: Eduardo Torres Flores.
+Profesor: Josue Israel Rivas Diaz.
+Asignatura: Programacion Orientada a Objetos*/
+
 public class Enemigo : MonoBehaviour
 {
     public int EnemigoID;
@@ -16,7 +21,9 @@ public class Enemigo : MonoBehaviour
     
     
     // Start is called before the first frame update
-  
+    
+    /*En esta parte se manda a llamar al script base enemigos, es donde se declaran las variables que 
+    se van a mandar a llamar en la plataforma Unity*/
    private void Start() 
   {
    
@@ -29,7 +36,7 @@ public class Enemigo : MonoBehaviour
    
   }
   
-
+  //Estos son los datos visibles que se mostraran en el inspector de Unity.
   void cargarDatos(int id)
     {
         for (int i = 0; i < BDEnemigos.nuevoEnemigo.Length; i++)

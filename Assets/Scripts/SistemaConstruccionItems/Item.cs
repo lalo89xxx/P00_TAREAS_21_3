@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*Nombre: Eduardo Torres Flores.
+Profesor: Josue Israel Rivas Diaz.
+Asignatura: Programacion Orientada a Objetos*/
+
 public class Item : MonoBehaviour
 {
 
@@ -10,6 +14,9 @@ public class Item : MonoBehaviour
     public string Nombre;
 
     BaseItem BDItem;
+
+    /*En esta parte se manda a llamar al script base item, es donde se declaran las variables que 
+    se van a mandar a llamar en la plataforma Unity*/
 
     private void Start() 
   {
@@ -23,7 +30,7 @@ public class Item : MonoBehaviour
    
   }
   
-
+  //Estan son las datos visibles que se mostraran en el inspector de Unity
   void cargarDatos(int id)
     {
         for (int i = 0; i < BDItem.nuevoItem.Length; i++)
