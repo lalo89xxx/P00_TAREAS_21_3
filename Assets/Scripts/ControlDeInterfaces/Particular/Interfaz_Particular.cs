@@ -9,7 +9,6 @@ public class Interfaz_Particular : MonoBehaviour
 
     [Header ("Interfaces Basicas")]
     public Text NombreTXT;
-
     public Text VidaTXT;
 
     [Header ("Interfaces TMPro")]

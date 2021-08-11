@@ -12,10 +12,10 @@ public class BaseEnemigo : MonoBehaviour
     {
         nuevoEnemigo = new ConstructorEnemigo[4];
 
-        nuevoEnemigo[0] = new ConstructorEnemigo(1,"Mister X",200,40);
-        nuevoEnemigo[1] = new ConstructorEnemigo(2,"Pachito",150,35);
-        nuevoEnemigo[2] = new ConstructorEnemigo(3,"Mr Pop",100,30);
-        nuevoEnemigo[3] = new ConstructorEnemigo(4,"Ciruela",50,25);  
+        nuevoEnemigo[0] = new ConstructorEnemigo(1,"Mister X",280,40);
+        nuevoEnemigo[1] = new ConstructorEnemigo(2,"Pachito",220,35);
+        nuevoEnemigo[2] = new ConstructorEnemigo(3,"Mr Pop",250,30);
+        nuevoEnemigo[3] = new ConstructorEnemigo(4,"Ciruela",300,25);  
         
         
 

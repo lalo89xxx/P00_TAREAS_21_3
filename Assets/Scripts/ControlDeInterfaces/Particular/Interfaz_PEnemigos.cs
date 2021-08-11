@@ -9,6 +9,7 @@ public class Interfaz_PEnemigos : MonoBehaviour
     [Header ("Interfaces TMPro")]
 
     public TMP_Text NombreTXTP;
+    public TMP_Text VidaTXTP;
     
 
     Enemigo enemigoData;
@@ -26,7 +27,13 @@ public class Interfaz_PEnemigos : MonoBehaviour
        
         if (NombreTXTP != null)
         {
-           NombreTXTP.text = enemigoData.Nombre; 
+           NombreTXTP.text = enemigoData.Nombre;
+            
+        }
+
+          if (VidaTXTP != null)
+        {
+           VidaTXTP.text = enemigoData.Vida.ToString(); 
         }
         
      
@@ -41,7 +48,13 @@ public class Interfaz_PEnemigos : MonoBehaviour
         
         if (NombreTXTP != null)
         {
-           NombreTXTP.text = enemigoData.Nombre; 
+           NombreTXTP.text = enemigoData.Nombre;
+           
+        }
+
+          if (VidaTXTP != null)
+        {
+           VidaTXTP.text = enemigoData.Vida.ToString(); 
         }
         
     }
